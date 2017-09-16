@@ -1,0 +1,13 @@
+{
+    "name": "h4090/phpcart_v2",
+    "authors": [
+        {
+            "name": "JustinHung0407",
+            "email": "h40906h@yahoo.com.tw"
+        }
+    ],
+    
+    "require": {
+        "propel/propel": "~2.0@dev"
+    }
+}

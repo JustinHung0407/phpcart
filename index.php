@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>InHyper</title>
 
     <!-- Bootstrap core CSS -->
     <link href="libs/css/bootstrap.min.css" rel="stylesheet">
@@ -26,26 +26,27 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">InHyper</h3>
               <nav class="nav nav-masthead">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link active" href="index.php">Home</a>
+                <a class="nav-link" href="products.php">Products</a>
+                <a class="nav-link" href="cart.php">Cart</a>
+                <a class="nav-link" href="contact.php">Contact</a>
               </nav>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
+            <h1 class="cover-heading">Welcome~</h1>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+              <a href="products.php" class="btn btn-lg btn-secondary">Shop Now</a>
             </p>
           </div>
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Php cart practice using<a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://www.facebook.com/HUGH.com.tw">Justin Hung</a>.</p>
             </div>
           </div>
 
