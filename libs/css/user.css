@@ -110,3 +110,9 @@
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
+
+body {
+  margin:0px;
+  padding:0px;
+  background:#fff url(背景圖片網址) center center fixed no-repeat;　
+  background-size: cover;　

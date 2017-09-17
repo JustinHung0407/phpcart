@@ -16,10 +16,10 @@
       <li class="nav-item" id="cart">
         <a class="nav-link" href="cart.php">
           <?php
-          // count products in cart
-          $cart_item->user_id=1; // default to user with ID "1" for now
-          $cart_count=$cart_item->count();
-          ?>Shopping Cart</a>
+// count products in cart
+$cart_item->user_id = 1; // default to user with ID "1" for now
+$cart_count         = $cart_item->count();
+?>Shopping Cart</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

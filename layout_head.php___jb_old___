@@ -27,8 +27,8 @@ $_SESSION['cart']=isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
 </head>
 <style>
   .nav-trans{
-         background-color: transparent !important;
-     }
+    background-color: transparent !important;
+  }
 </style>
 <body>
 
