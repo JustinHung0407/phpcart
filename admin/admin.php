@@ -70,7 +70,7 @@ if (isset($_GET["new_id"]) && $_GET["new_id"] != "") {
 		<meta name="author" content="">
 		<title>Admin</title>
 		<!-- Bootstrap Core CSS -->
-		<link href="../libs/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../member/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<!-- <link href="css/sb-admin.css" rel="stylesheet">
 		-->
@@ -100,7 +100,7 @@ if (isset($_GET["new_id"]) && $_GET["new_id"] != "") {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Title</a>
+					<a class="navbar-brand" href="#">Admin</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -314,8 +314,8 @@ while ($pull_Admin = @mysqli_fetch_assoc($datapool_Admin)) {$no++;?>
 					</div>
 				</div>
 				<!-- jQuery -->
-				<script src="../js/jquery.js"></script>
+				<script src="../member/js/jquery.js"></script>
 				<!-- Bootstrap Core JavaScript -->
-				<script src="../js/bootstrap.min.js"></script>
+				<script src="../member/js/bootstrap.min.js"></script>
 			</body>
 		</html>

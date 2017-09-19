@@ -72,9 +72,9 @@ if((isset($_POST['recovery'])) && ($_POST['recovery'] != "")){
 
 <!-- Local bootstrap CSS & JS -->
 
-<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="member/css/bootstrap.min.css">
 
-<link rel="stylesheet" media="screen" href="css/signin.css">
+<link rel="stylesheet" media="screen" href="member/css/signin.css">
 
 <script src="js/jquery.js"></script>
 
@@ -94,7 +94,7 @@ if((isset($_POST['recovery'])) && ($_POST['recovery'] != "")){
 
 		<meta name="keywords" content="">
 
-		
+
 
 	</head>
 

@@ -27,7 +27,7 @@ $identity = $pull_all["name"];
       <meta name="author" content="">
       <title>Admin</title>
       <!-- Bootstrap Core CSS -->
-      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../member/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom CSS -->
       <!-- <link href="css/sb-admin.css" rel="stylesheet">
       -->
@@ -59,7 +59,7 @@ $identity = $pull_all["name"];
                </button>
                <a class="navbar-brand" href="#">Title</a>
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                <form class="navbar-form navbar-left" role="search">
@@ -106,14 +106,14 @@ $identity = $pull_all["name"];
                   </li>
                </ul>
             </div>
-            <!-- /.navbar-collapse -->          
+            <!-- /.navbar-collapse -->
             </div>
          </nav>
             <div class="container">
                <div class="row">
                   <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                      <div class="panel panel-default">
-                        <!-- Default panel contents -->            
+                        <!-- Default panel contents -->
                         <div class="panel-heading"> <strong>Toolbox</strong></div>
                         <div class="list-group">
                            <a href="admin.php" class="list-group-item"> <i class="fa fa-user-md" aria-hidden="true"></i> Member</a>
@@ -129,8 +129,8 @@ $identity = $pull_all["name"];
                </div>
             </div>
          <!-- jQuery -->
-         <script src="../js/jquery.js"></script>
+         <script src="../member/js/jquery.js"></script>
          <!-- Bootstrap Core JavaScript -->
-         <script src="../js/bootstrap.min.js"></script>
+         <script src="../member/js/bootstrap.min.js"></script>
       </body>
    </html>

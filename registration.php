@@ -12,18 +12,19 @@ require_once("connect.php");
 	if(isset($_POST["action"])&&($_POST["action"]=="join")){
 	$query_FindUser = "SELECT username FROM member WHERE username = '".$_POST["s_id"]."'";
 	$result = mysqli_query($connect,$query_FindUser);
-		if(mysqli_num_rows($result)>0){
-			header("Location:registration.php?errMsg=1&username=".$_POST["s_id"]);
-		}else{
-			$s_id = $_POST["s_id"];
-			$s_pw = md5($_POST["s_pwd"]);
-			$s_name = $_POST["s_name"];
-			$s_email = $_POST["s_email"];
-			$query_insert = sprintf("INSERT INTO member (username,pwd,name,email) VALUES ('%u','%s','%s','%s')",$s_id,$s_pw,$s_name,$s_email);
-			mysqli_query($connect,$query_insert);
-			header("Location: registration.php?loginStats=1");
-		}
+
+	if(mysqli_num_rows($result)>0){
+		header("Location:registration.php?errMsg=1&username=".$_POST["s_id"]);
+	}else{
+		$s_id = $_POST["s_id"];
+		$s_pw = md5($_POST["s_pwd"]);
+		$s_name = $_POST["s_name"];
+		$s_email = $_POST["s_email"];
+		$query_insert = sprintf("INSERT INTO member (username,pwd,name,email) VALUES ('%u','%s','%s','%s')",$s_id,$s_pw,$s_name,$s_email);
+		mysqli_query($connect,$query_insert);
+		header("Location: registration.php?loginStats=1");
 	}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,7 +75,7 @@ require_once("connect.php");
 					document.fillin.s_email.focus();
 					return false;
 				}
-				return confirm('Submit this form ?');
+				return true;
 		}
 		function check_passwd(pw1,pw2){
 		if(pw1 == ''){
@@ -120,7 +121,7 @@ window.location.href='index.php';
 <?php }?>
 	<div class="container-fluid">
 		<div class="col-md-6 col-md-offset-3">
-			<form action="" method="POST" role="form" id="fillin" name="fillin" onSubmit="return chkform();">
+			<form action="" method="POST" role="form" id="fillin" name="fillin" onSubmit="return chkform(this)"	>
 				<legend>Signup</legend>
 				<div class="form-group">
 					<!--labels-->
@@ -146,7 +147,7 @@ window.location.href='index.php';
 					<p style="font-style: italic"><br/><strong> Marked <font color="red">*</font> must be filled</strong></p><br/></p>
 				</div>
 				<div align="center">
-					<input name="action" type="hidden" id="action" value="join">
+					<input name="action" id="action" type="hidden" value="join">
 					<button type="submit" class="btn btn-primary">Submit</button>
 					<button type="reset" class="btn btn-danger">Refill</button>
 				</div>

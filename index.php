@@ -53,9 +53,10 @@ $_SESSION['cart'] = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
     body {
         background-image: url(http://localhost/phpcart_v2/uploads/images/nbacover.jpg);
         background-size: cover;
+    }
 </style>
 
-<body>
+<a href=" href="http://stats.nba.com/schedule/""><body></a>
 
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg">

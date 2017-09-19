@@ -101,7 +101,7 @@ if (isset($_SESSION["u_login"]) && ($_SESSION["u_login"] != "")) {
 										echo $_COOKIE["isRemember"];
 										}
 										?>">
-										Remember Me
+										Remember Me?
 									</label>
 								</div>
 								<button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
