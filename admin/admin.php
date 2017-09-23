@@ -21,7 +21,7 @@ $query_pullMember = "SELECT * FROM member WHERE username ='" . $_SESSION["u_logi
 $datapool = mysqli_query($connect, $query_pullMember);
 #pull data to vars
 $pull_all = @mysqli_fetch_assoc($datapool);
-$identity = $pull_all["name"];
+$_SESSION["identity"] = $pull_all["name"];
 // Pull admin
 $query_Admin = "SELECT * FROM member WHERE gid = '99'";
 $datapool_Admin = mysqli_query($connect, $query_Admin);
@@ -132,7 +132,7 @@ if (isset($_GET["new_id"]) && $_GET["new_id"] != "") {
 							</li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user">&nbsp;</i>
-									<?php echo $identity; ?> <b class="caret"></b>
+									<?php echo $_SESSION["identity"]; ?> <b class="caret"></b>
 								</a>
 								<ul class="dropdown-menu">
 									<li>
