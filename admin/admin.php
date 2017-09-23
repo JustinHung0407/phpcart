@@ -11,8 +11,9 @@ if (!isset($_SESSION["u_login"]) || ($_SESSION["u_login"] == "") || ($_SESSION["
 	header("Location:../index.php");
 }
 if (isset($_GET["logout"]) && ($_GET["logout"] == "true")) {
-	unset($_SESSION["u_login"]);
+	$_SESSION["u_login"]=1;
 	unset($_SESSION["Level"]);
+	unset($_SESSION["username"]);
 	header("Location:../index.php");
 }
 //pull user name
@@ -100,7 +101,7 @@ if (isset($_GET["new_id"]) && $_GET["new_id"] != "") {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Admin</a>
+					<a class="navbar-brand" href="../index.php">Admin</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

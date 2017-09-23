@@ -10,7 +10,7 @@ $db_user = "root";
 $db_passwd = "9901";
 
 //對資料庫連線
-($connect = @mysqli_connect($db_server, $db_user, $db_passwd)) or die("SQL_CONN_FAIL");
+($connect = mysqli_connect($db_server, $db_user, $db_passwd)) or die("SQL_CONN_FAIL");
 #if (!@mysqli_connect($db_server, $db_user, $db_passwd)) or die("SQL_CONN_FAIL");
 
 //CONNECT DATABASE

@@ -20,9 +20,9 @@ $cart_item = new CartItem($db);
 $page_title = "";
 
 // include page header html
-
 $_SESSION['cart'] = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,9 +31,9 @@ $_SESSION['cart'] = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?php
-        echo isset($page_title) ? $page_title : "The Code of a Ninja";
-        ?></title>
+    <title><?php echo isset($page_title) ? $page_title : "The Code of a Ninja";
+
+     ?></title>
 
     <!-- Bootstrap CSS -->
     <link href="libs/css/bootstrap.css" rel="stylesheet" media="screen">
@@ -58,42 +58,9 @@ $_SESSION['cart'] = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
 
 <a href=" href="http://stats.nba.com/schedule/""><body></a>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">InHyper</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item" id="home">
-                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item" id="product">
-                <a class="nav-link" href="products.php">Products</a>
-            </li>
-            <li class="nav-item" id="cart">
-                <a class="nav-link" href="cart.php">
-                    <?php
-                    // count products in cart
-                    $cart_item->user_id = 1; // default to user with ID "1" for now
-                    $cart_count = $cart_item->count();
-                    ?>Shopping Cart</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            &nbsp
-            <button type="button" class="btn btn-primary" onclick="location.href='mem_index.php'"> Login</button>
-        </form>
-    </div>
-</nav>
-
-<!-- /navbar -->
-
+<?php
+include "navigation.php";
+?>
 
 <!-- jQuery library -->
 <script src="libs/js/jquery.js"></script>

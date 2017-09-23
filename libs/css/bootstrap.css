@@ -185,7 +185,7 @@ sup {
 }
 
 a {
-  color: #a100ff;
+  color: #1d34e9;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -3194,7 +3194,7 @@ tbody.collapse.show {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #084481;
   background-color: #fff;
   border-color: #ddd #ddd #fff;
 }

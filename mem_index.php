@@ -25,8 +25,9 @@ if (isset($_SESSION["u_login"]) && ($_SESSION["u_login"] != "")) {
 	<body>
 		<?php
 		$Err_Level = 0;
-		if ((((@$_POST['username']) != "") && (@$_POST['password']) != "")) {
 		if ((isset($_POST['username']) && isset($_POST['password']))) {
+		if (((($_POST['username']) != "") && ($_POST['password']) != "")) {
+
 		#pull user data
 		$query_RecLogin = "SELECT * FROM member WHERE username = '" . $_POST['username'] . "'";
 		$RecLogin = mysqli_query($connect, $query_RecLogin);
